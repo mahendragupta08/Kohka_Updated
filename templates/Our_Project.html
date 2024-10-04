@@ -1,0 +1,97 @@
+{% extends "index.html" %}{% block head %}{{super()}}{% endblock %}
+{% block content %}
+<div class="hero-wrap" style="background-image: url('../static/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+      <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+         <!-- <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Causes</span></p> -->
+        <h1 class="mb-3 bread font-text title" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our Projects</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 ftco-animate">
+        <div class="cause-entry">
+          <a href="{{url_for('main.ComputerLiteracy')}}" class="img" style="background-image: url(../static/images/event-6.jpg);"></a>
+          <div class="text p-3 p-md-4">
+            <h3><a href="{{url_for('main.ComputerLiteracy')}}">Computer Literacy</a></h3>
+            <!-- <p>Computer Classes for MNB Industrial Home for the Blind and for sex worker communities in Mumbai</p> -->
+            </div>
+        </div>
+      </div>
+    <!-- 2 -->
+    <div class="col-md-4 ftco-animate">
+      <div class="cause-entry">
+        <a href="{{url_for('main.secondary_education')}}" class="img" style="background-image: url(../static/images/Second-Educ-img.webp);"></a>
+                    <div class="text p-3 p-md-4">
+          <h3><a href="{{url_for('main.secondary_education')}}"> Secondary Education</a></h3>
+          <!-- <p>Healthcare of Rs, 2 lakhs for 12-year-old Nisha Chaurasiya who was suffering from Juvenile Deaumatomydic. </p> -->
+          </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="col-md-4 ftco-animate">
+      <div class="cause-entry">
+        <a href="{{url_for('main.self_employement')}}" class="img" style="background-image: url(../static/images/slf-emp-bnnr.webp);"></a>
+        <div class="text p-3 p-md-4">
+          <h3><a href="{{url_for('main.self_employement')}}">Self-Employment Program</a></h3>
+          <!-- <p>Online classes for supplementary maths education for 8th, 9th and 10th grade student</p> -->
+          </div>
+      </div>
+    </div>
+    <!-- 4 -->
+    <div class="col-md-4 ftco-animate">
+      <div class="cause-entry">
+        <a href="{{url_for('main.Skill_Development')}}" class="img" style="background-image: url(../static/images/udaan-bnnr.webp);"></a>
+        <div class="text p-3 p-md-4">
+          <h3><a href="{{url_for('main.Skill_Development')}}">Skill Development</a></h3>
+          <!-- <p>Block-Printing, Tailoring, Candle and Diya making training for
+            sex workers in Mumbai</p> -->
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 ftco-animate">
+      <div class="cause-entry">
+        <a href="{{url_for('main.secondary_education')}}" class="img" style="background-image: url(../static/images/adoles-Educ-bnnr.webp);"></a>
+        <div class="text p-3 p-md-4">
+          <h3><a href="{{url_for('main.secondary_education')}}">Adolescent Education</a></h3>
+          <!-- <p>1,02,430
+            " Corona Virus Relief Work including police departments, hospitals and migrant workers. 
+            "</p> -->
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 ftco-animate">
+      <div class="cause-entry">
+        <a href="{{url_for('main.JCH')}}" class="img" style="background-image: url(../static/images/event-4.jpg);"></a>
+        <div class="text p-3 p-md-4">
+          <h3><a href="{{url_for('main.JCH')}}">Juvenile Correction Home</a></h3>
+          <!-- <p>44,185 
+            "Maharashtra including sex workers, visually impaired individuals, transgenders and more"</p>
+          </div> -->
+      </div>
+    </div>      		
+  </div>
+  
+  <div class="col-md-4 ftco-animate">
+    <div class="cause-entry">
+      <a href="{{url_for('main.school_infrastructure')}}" class="img" style="background-image: url(../static/images/schl-infra-bnnr.webp);"></a>
+      <div class="text p-3 p-md-4">
+        <h3><a href="{{url_for('main.school_infrastructure')}}">School Infrastructure</a></h3>
+        <!-- <p>44,185 
+          "Maharashtra including sex workers, visually impaired individuals, transgenders and more"</p>
+        </div> -->
+    </div>
+  </div>      		
+</div>
+  </div>
+</section>
+{% endblock %}
